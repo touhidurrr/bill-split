@@ -1,6 +1,9 @@
 # Bill Split
 
-Split a food-delivery bill proportionally — _poi poi hisab_, exact to the last poisha — then export a thermal-receipt-style PNG to drop in the group chat.
+Split the bill with your friends, get poi poi hisab and a receipt. Welcome to bill split!
+
+<img width="1440" height="1876" alt="image" src="https://github.com/user-attachments/assets/8911c95c-020d-4bab-9faa-f60cfbe6760f" />
+
 
 A single-screen React app. No backend, no accounts, no storage, no third-party requests. Type the total, the delivery fee, and what each person ordered; it computes everyone's exact share live and renders a downloadable receipt.
 
