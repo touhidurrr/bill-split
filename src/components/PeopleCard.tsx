@@ -29,7 +29,7 @@ export function PeopleCard({
   return (
     <section className="glass-card">
       <div className="mb-4 flex flex-wrap items-center justify-between gap-2.5">
-        <h2 className="field-label !mb-0">People</h2>
+        <h2 className="field-label mb-0!">People</h2>
         <FeeModeToggle mode={feeMode} onChange={onFeeModeChange} />
         <span className="rounded-full border border-teal/22 bg-teal/8 px-2.5 py-1 font-mono text-[11px] font-semibold whitespace-nowrap text-teal">
           {count} {count === 1 ? "person" : "persons"}

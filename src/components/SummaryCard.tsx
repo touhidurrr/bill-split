@@ -103,7 +103,7 @@ function Chip({
 }) {
   return (
     <div className="rounded-[14px] border border-line bg-black/25 px-3 py-2.5">
-      <p className="mb-1 font-display text-[10px] font-semibold tracking-[0.1em] text-mut uppercase">
+      <p className="mb-1 font-display text-[10px] font-semibold tracking-widest text-mut uppercase">
         {label}
       </p>
       <p className={`font-mono text-base font-bold ${tone}`}>{value}</p>

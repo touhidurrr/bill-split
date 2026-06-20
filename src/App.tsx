@@ -62,7 +62,7 @@ export default function App() {
   };
 
   return (
-    <main className="mx-auto max-w-[580px] px-4 pt-7 pb-15">
+    <main className="mx-auto max-w-145 px-4 pt-7 pb-15">
       <header className="mb-5 flex items-end justify-between">
         <div>
           <h1 className="bg-linear-115 from-teal from-10% via-sky via-55% to-violet bg-clip-text font-display text-3xl font-bold tracking-tight text-transparent">
