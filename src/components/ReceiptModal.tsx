@@ -24,19 +24,19 @@ export function ReceiptModal({ dataUrl, onClose }: ReceiptModalProps) {
           <button
             type="button"
             onClick={onClose}
-            className="flex-1 rounded-[14px] border border-teal/28 bg-teal/6 p-3 text-[13.5px] font-bold text-teal transition-colors hover:bg-teal/14"
+            className="border-teal/28 bg-teal/6 text-teal hover:bg-teal/14 flex-1 rounded-[14px] border p-3 text-[13.5px] font-bold transition-colors"
           >
             Close
           </button>
           <a
             href={dataUrl}
             download="bill-split-receipt.png"
-            className="grid flex-1 place-items-center rounded-[14px] bg-linear-115 from-teal to-sky p-3 text-[13.5px] font-bold text-[#04222b] no-underline shadow-[0_6px_22px_rgba(56,189,248,0.35)] transition-[filter] hover:brightness-108"
+            className="from-teal to-sky grid flex-1 place-items-center rounded-[14px] bg-linear-115 p-3 text-[13.5px] font-bold text-[#04222b] no-underline shadow-[0_6px_22px_rgba(56,189,248,0.35)] transition-[filter] hover:brightness-108"
           >
             Download PNG
           </a>
         </div>
-        <p className="mt-2.5 text-xs text-mut">
+        <p className="text-mut mt-2.5 text-xs">
           On mobile: long-press the image to save or share.
         </p>
       </div>

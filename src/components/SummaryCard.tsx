@@ -33,7 +33,7 @@ export function SummaryCard({
       <Row label="Σ Item Price" value={compact(split.sumItemPrice)} />
       <Row label="Food Price (Total − Fee)" value={money(split.foodPrice)} />
 
-      <div className="grid grid-cols-2 gap-2.5 border-y border-line py-3">
+      <div className="border-line grid grid-cols-2 gap-2.5 border-y py-3">
         <Chip
           label="Item Share Σ"
           value={money(split.sumItemShare)}
@@ -46,9 +46,9 @@ export function SummaryCard({
         />
       </div>
 
-      <div className="flex items-center justify-between font-display text-[19px] font-bold">
+      <div className="font-display flex items-center justify-between text-[19px] font-bold">
         <span>Total</span>
-        <span className="bg-linear-115 from-teal to-sky bg-clip-text font-mono text-transparent">
+        <span className="from-teal to-sky bg-linear-115 bg-clip-text font-mono text-transparent">
           {money(totalBill)}
         </span>
       </div>
@@ -67,14 +67,14 @@ export function SummaryCard({
         <button
           type="button"
           onClick={copyAsText}
-          className="rounded-[14px] border border-teal/28 bg-teal/6 p-3 text-[13.5px] font-bold text-teal transition-colors hover:bg-teal/14"
+          className="border-teal/28 bg-teal/6 text-teal hover:bg-teal/14 rounded-[14px] border p-3 text-[13.5px] font-bold transition-colors"
         >
           {copied ? "Copied!" : "Copy as text"}
         </button>
         <button
           type="button"
           onClick={onGenerateReceipt}
-          className="rounded-[14px] bg-linear-115 from-teal to-sky p-3 text-[13.5px] font-bold text-[#04222b] shadow-[0_6px_22px_rgba(56,189,248,0.35)] transition-[filter,box-shadow] hover:brightness-108 hover:shadow-[0_8px_26px_rgba(56,189,248,0.45)]"
+          className="from-teal to-sky rounded-[14px] bg-linear-115 p-3 text-[13.5px] font-bold text-[#04222b] shadow-[0_6px_22px_rgba(56,189,248,0.35)] transition-[filter,box-shadow] hover:shadow-[0_8px_26px_rgba(56,189,248,0.45)] hover:brightness-108"
         >
           &#11015; Receipt PNG
         </button>
@@ -102,8 +102,8 @@ function Chip({
   tone: string;
 }) {
   return (
-    <div className="rounded-[14px] border border-line bg-black/25 px-3 py-2.5">
-      <p className="mb-1 font-display text-[10px] font-semibold tracking-widest text-mut uppercase">
+    <div className="border-line rounded-[14px] border bg-black/25 px-3 py-2.5">
+      <p className="font-display text-mut mb-1 text-[10px] font-semibold tracking-widest uppercase">
         {label}
       </p>
       <p className={`font-mono text-base font-bold ${tone}`}>{value}</p>

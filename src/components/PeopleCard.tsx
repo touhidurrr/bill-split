@@ -31,13 +31,13 @@ export function PeopleCard({
       <div className="mb-4 flex flex-wrap items-center justify-between gap-2.5">
         <h2 className="field-label mb-0!">People</h2>
         <FeeModeToggle mode={feeMode} onChange={onFeeModeChange} />
-        <span className="rounded-full border border-teal/22 bg-teal/8 px-2.5 py-1 font-mono text-[11px] font-semibold whitespace-nowrap text-teal">
+        <span className="border-teal/22 bg-teal/8 text-teal rounded-full border px-2.5 py-1 font-mono text-[11px] font-semibold whitespace-nowrap">
           {count} {count === 1 ? "person" : "persons"}
         </span>
       </div>
 
       {count === 0 && (
-        <p className="mb-3 rounded-[14px] border-[1.5px] border-dashed border-line p-5 text-center text-[13px] text-faint">
+        <p className="border-line text-faint mb-3 rounded-[14px] border-[1.5px] border-dashed p-5 text-center text-[13px]">
           No one yet &mdash; add a person to start splitting.
         </p>
       )}
@@ -56,7 +56,7 @@ export function PeopleCard({
       <button
         type="button"
         onClick={onAdd}
-        className="w-full rounded-[14px] border-[1.5px] border-dashed border-line-2 bg-sky/5 p-3 text-[13.5px] font-bold tracking-wide text-sky transition-colors hover:border-sky hover:bg-sky/12"
+        className="border-line-2 bg-sky/5 text-sky hover:border-sky hover:bg-sky/12 w-full rounded-[14px] border-[1.5px] border-dashed p-3 text-[13.5px] font-bold tracking-wide transition-colors"
       >
         + Add person
       </button>

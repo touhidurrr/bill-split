@@ -13,7 +13,7 @@ interface FeeModeToggleProps {
 export function FeeModeToggle({ mode, onChange }: FeeModeToggleProps) {
   return (
     <div
-      className="flex overflow-hidden rounded-[10px] border border-line bg-black/25"
+      className="border-line flex overflow-hidden rounded-[10px] border bg-black/25"
       role="radiogroup"
       aria-label="How the fee is split"
     >

@@ -65,14 +65,14 @@ export default function App() {
     <main className="mx-auto max-w-145 px-4 pt-7 pb-15">
       <header className="mb-5 flex items-end justify-between">
         <div>
-          <h1 className="bg-linear-115 from-teal from-10% via-sky via-55% to-violet bg-clip-text font-display text-3xl font-bold tracking-tight text-transparent">
+          <h1 className="from-teal via-sky to-violet font-display bg-linear-115 from-10% via-55% bg-clip-text text-3xl font-bold tracking-tight text-transparent">
             Bill Split
           </h1>
-          <p className="mt-1.5 font-mono text-xs text-faint">
+          <p className="text-faint mt-1.5 font-mono text-xs">
             {FORMULAS[feeMode]}
           </p>
         </div>
-        <p className="text-right font-mono text-xs text-mut">
+        <p className="text-mut text-right font-mono text-xs">
           {new Date().toLocaleDateString(undefined, {
             weekday: "short",
             day: "numeric",

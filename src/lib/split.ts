@@ -4,9 +4,9 @@ import { parseAmount } from "./format";
 const MATCH_TOLERANCE = 0.01;
 
 /**
- * Splits the bill: each person pays their proportional share of the food
- * (total − fee) plus a fee share, either equal per head or proportional
- * to item price. No rounding — full float precision.
+ * Splits the bill: each person pays their proportional share of the food (total
+ * − fee) plus a fee share, either equal per head or proportional to item price.
+ * No rounding — full float precision.
  */
 export function computeSplit(
   people: readonly Person[],
